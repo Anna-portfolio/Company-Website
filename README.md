@@ -1,5 +1,5 @@
 # Company-Website
-A simple one page website using HTML, CSS, and JavaScript
+A simple one page corporate website using HTML, CSS, and JavaScript
 
 Main features:
 - slider (using JavaScript; images + text carousel, autoplay, next and previous buttons, responsive indicators. Adjustable to unlimited number of slides);
@@ -12,4 +12,4 @@ Main features:
 
 INFO: This project is intended to demonstrate a one page website layout. Therefore, all the potentially linking elements (apart from the sticky navbar links) are intentionally left inactive.
 
-INFO: For notes on authors of the images used see "images_info.txt" in the "images" file.
+INFO: For notes on authors of the images used, see "images_info.txt" in the "images" file.
