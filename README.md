@@ -11,4 +11,5 @@ Main features:
 - responsive web design.
 
 INFO: This project is intended to demonstrate a one page website layout. Therefore, all the potentially linking elements (apart from the sticky navbar links) are intentionally left inactive.
+
 INFO: For notes on authors of the images used see "images_info.txt" in the "images" file.
