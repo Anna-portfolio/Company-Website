@@ -2,7 +2,7 @@
 A one page corporate website using HTML, CSS, and pure JavaScript
 
 Main features:
-- slider (using JavaScript; images + text carousel, autoplay, next and previous buttons, responsive indicators. Adjustable to unlimited number of slides);
+- slider (using JavaScript; images + text carousel, autoplay, next and previous buttons, responsive indicators. Can be used with unlimited number of slides);
 - burger menu (using JavaScript; vertically-oriented main menu with a "burger-to-X" animation);
 - sticky navbar, and a sub-navbar hiding on scroll down;
 - a smooth page transition;
