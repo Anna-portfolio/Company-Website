@@ -1,5 +1,5 @@
 # Company-Website
-A simple one page corporate website using HTML, CSS, and pure JavaScript
+A one page corporate website using HTML, CSS, and pure JavaScript
 
 Main features:
 - slider (using JavaScript; images + text carousel, autoplay, next and previous buttons, responsive indicators. Adjustable to unlimited number of slides);
