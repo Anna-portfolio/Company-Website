@@ -1,5 +1,5 @@
 # Company-Website
-A one page corporate website using HTML, CSS, and pure JavaScript
+A one page corporate website using HTML, CSS, and JavaScript (no library)
 
 ![company-image](https://user-images.githubusercontent.com/75646880/109954283-72c60d00-7ce1-11eb-9d66-35f70b0a861d.png)
 
