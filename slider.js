@@ -16,27 +16,22 @@ function forwSlideIndex(){
     }
 }
 
-function forwSlide(){
-    if(i < slides.length - 1){
+function forwSlide() {
+    if (i < slides.length - 1) {
         slides[i].classList.remove("slide-active");
-        dots[i].classList.remove("dot-active");        
-        slides[(i + 1)].classList.add("slide-active");
-        dots[(i + 1)].classList.add("dot-active");  
+        dots[i].classList.remove("dot-active");
+        slides[i + 1].classList.add("slide-active");
+        dots[i + 1].classList.add("dot-active");
     } else {
-        if (i === slides.length - 1){
+        if (i === slides.length - 1) {
             slides[i].classList.remove("slide-active");
             dots[i].classList.remove("dot-active");
             slides[0].classList.add("slide-active");
             dots[0].classList.add("dot-active");
-        }else {
+        } else {
             i = 0;
-            slides[i].classList.remove("slide-active");
-            dots[i].classList.remove("dot-active");
-            slides[(i + 1)].classList.add("slide-active");
-            dots[(i + 1)].classList.add("dot-active");
         }
     }
-    clearInterval();
     forwSlideIndex();
 }
 
@@ -58,12 +53,10 @@ function prevSlide(){
         slides[(slides.length - 1)].classList.add("slide-active");
         dots[(dots.length - 1)].classList.add("dot-active");
     } else{
-        if(i <= slides.length - 1 && i !== 0){
             slides[i].classList.remove("slide-active");
             dots[i].classList.remove("dot-active");
             slides[i - 1].classList.add("slide-active");
             dots[i - 1].classList.add("dot-active");
-        }
     } 
     prevSlideIndex();
 }
@@ -78,34 +71,19 @@ function slideTimer() {
 slideTimer();
 
 //changes slides and dots while clicking on a dot
-function activeSlide(n){
-    activeDot(n);
-    activeImage(n);
-}
-
-function activeDot(n){
-    for(i = 0; i < dots.length; i++){
-        j = dots[i];
-        if(j !== n){
-            dots[i].classList.remove("dot-active");
-        } 
-    }  
-    clearInterval();
-    dots[n].classList.add("dot-active");
-}
-
-function activeImage(n){
-    for(i = 0; i < slides.length; i++){
-        j = slides[i];
-        if(j !== n){
+function activeSlide(n) {
+    for (i = 0; i < slides.length; i++) {
+        if (slides[i] !== n) {
             slides[i].classList.remove("slide-active");
+            dots[i].classList.remove("dot-active");
         }
     }
     slides[n].classList.add("slide-active");
-    clearInterval();
-    if(n === slides.length - 1){
-        i--; 
-    }; 
+    dots[n].classList.add("dot-active");
+
+    if (n === slides.length - 1) {
+        i--;
+    }
 }
 
 //gets the slide and dot with index 0 while loading the page
